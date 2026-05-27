@@ -1,0 +1,139 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+:root {
+  --background: #F8F7F4;
+  --foreground: #111827;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F8F7F4;
+  color: #111827;
+  font-family: var(--font-inter);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-playfair);
+}
+
+.container-premium {
+  @apply
+    w-full
+
+    max-w-[1600px]
+
+    mx-auto
+
+    px-5
+    sm:px-8
+    lg:px-10
+    xl:px-14
+    2xl:px-20;
+}
+
+.glass {
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.3);
+
+  box-shadow:
+    0 8px 32px rgba(15,23,42,0.08);
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background-size: 200% 200%;
+
+  animation:
+    gradientMove 12s ease infinite;
+}
+
+.interactive-border {
+  position: relative;
+}
+
+.interactive-border::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: inherit;
+
+  padding: 1px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.4),
+      rgba(198,169,105,0.2),
+      transparent
+    );
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite: xor;
+
+  mask-composite: exclude;
+
+  pointer-events: none;
+}
+
+.light-hover {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.light-hover::after {
+  content: "";
+
+  position: absolute;
+
+  inset: -100%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,255,255,0.18),
+      transparent 40%
+    );
+
+  opacity: 0;
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.8s ease;
+
+  transform: translate(-30%, -30%);
+}
+
+.light-hover:hover::after {
+  opacity: 1;
+
+  transform: translate(0%, 0%);
+}
