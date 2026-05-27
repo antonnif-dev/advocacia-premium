@@ -2,25 +2,22 @@
 
 import { Canvas } from "@react-three/fiber";
 
-import { Points, PointMaterial } from "@react-three/drei";
+import {
+    Points,
+    PointMaterial,
+} from "@react-three/drei";
 
 import * as random from "maath/random";
 
 export default function Particles3D() {
-    const sphere = random.inSphere(
-        new Float32Array(5000),
-        { radius: 1.5 }
-    );
+    const sphere = new Float32Array(5000);
+
+    random.inSphere(sphere, {
+        radius: 1.2,
+    });
 
     return (
-        <div
-            className="
-        absolute
-        inset-0
-
-        opacity-40
-      "
-        >
+        <div className="absolute inset-0 -z-10">
 
             <Canvas camera={{ position: [0, 0, 1] }}>
 
