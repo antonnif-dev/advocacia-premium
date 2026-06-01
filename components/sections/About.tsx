@@ -228,12 +228,12 @@ export default function About() {
                                         label: "Anos de atuação",
                                     },
                                     {
-                                        number: "+500",
+                                        number: "+2600",
                                         label: "Clientes atendidos",
                                     },
                                     {
-                                        number: "98%",
-                                        label: "Satisfação",
+                                        number: "+850",
+                                        label: "Movimentações acompanhadas",
                                     },
                                 ].map((item) => (
                                     <div
@@ -284,6 +284,9 @@ export default function About() {
                                 ))}
 
                             </div>
+                                <p className="mt-4 text-sm text-slate-500 flex justify-end">
+                                    *Dados públicos obtidos através do perfil profissional no Escavador.
+                                </p>
 
                         </div>
 

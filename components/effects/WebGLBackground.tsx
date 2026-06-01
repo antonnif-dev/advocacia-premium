@@ -39,7 +39,7 @@ export default function WebGLBackground() {
                     <Sphere args={[1.8, 128, 128]} scale={2.4}>
 
                         <MeshDistortMaterial
-                            color="#f9a8d4"
+                            color="#edc7dc"
                             distort={0.4}
                             speed={2}
                             roughness={0}

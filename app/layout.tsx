@@ -18,6 +18,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/logo.svg",
+  },
   title: "Brandão Guedes",
   description:
     "Escritório premium especializado em soluções jurídicas estratégicas.",
