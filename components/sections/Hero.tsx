@@ -18,14 +18,12 @@ import ShaderGradient from "@/components/effects/ShaderGradient";
 export default function Hero() {
     return (
         <section
-        id="inicio" 
-        className="
+            id="inicio"
+            className="
         relative
         overflow-hidden
-
         pt-28
         lg:pt-33
-
         pb-20
         lg:pb-28
       "
@@ -61,7 +59,7 @@ export default function Hero() {
           w-[700px]
           h-[700px]
 
-          bg-amber-200/20
+          bg-pink-200/20
 
           blur-[120px]
 
@@ -91,7 +89,7 @@ export default function Hero() {
 
                     <div className="relative z-10">
 
-                        {/* BADGE */}
+                        {/* BADGE 
 
                         <div
                             className="
@@ -136,6 +134,8 @@ export default function Hero() {
 
                         </div>
 
+                        */}
+
                         {/* TITLE */}
 
                         <div className="mt-10 max-w-4xl">
@@ -154,7 +154,7 @@ export default function Hero() {
 
                     font-semibold
 
-                    text-slate-900
+                    text-rose-950
                   "
                                 >
                                     Defesa jurídica sofisticada para decisões importantes.
@@ -230,7 +230,7 @@ export default function Hero() {
                                 </Button>
 
                             </MagneticButton>
-
+                            {/*
                             <Button
                                 variant="outline"
                                 className="
@@ -253,6 +253,7 @@ export default function Hero() {
                             >
                                 Conhecer Áreas
                             </Button>
+                            */}
 
                         </div>
 

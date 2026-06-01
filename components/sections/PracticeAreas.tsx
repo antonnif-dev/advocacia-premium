@@ -2,6 +2,13 @@ import {
     Briefcase,
     Building2,
     Landmark,
+    Scale,
+    Shield,
+    Gavel,
+    Users,
+    HeartHandshake,
+    FileText,
+    Home,
     ArrowUpRight
 } from "lucide-react";
 import FadeUp from "@/components/effects/FadeUp";
@@ -11,24 +18,73 @@ import ReactiveCard from "@/components/effects/ReactiveCard";
 
 const areas = [
     {
-        icon: Briefcase,
-        title: "Direito Empresarial",
+        icon: Shield,
+        title: "Direito Penal",
         description:
-            "Estruturação jurídica estratégica para empresas.",
+            "Defesa técnica especializada em investigações, processos criminais e atuação estratégica perante tribunais.",
     },
 
     {
         icon: Landmark,
         title: "Direito Civil",
         description:
-            "Atuação especializada em litígios e contratos.",
+            "Atuação especializada em responsabilidade civil, indenizações, contratos e litígios.",
+    },
+
+    {
+        icon: Briefcase,
+        title: "Direito Empresarial",
+        description:
+            "Estruturação jurídica estratégica para empresas e proteção de operações corporativas.",
+    },
+
+    {
+        icon: Scale,
+        title: "Direito Trabalhista",
+        description:
+            "Assessoria preventiva e contenciosa para empregados e empregadores.",
+    },
+
+    {
+        icon: Users,
+        title: "Direito de Família",
+        description:
+            "Atuação em divórcios, guarda, alimentos, inventários e planejamento familiar.",
+    },
+
+    {
+        icon: Home,
+        title: "Direito Imobiliário",
+        description:
+            "Consultoria e atuação em compra, venda, locação e regularização de imóveis.",
+    },
+
+    {
+        icon: FileText,
+        title: "Direito Previdenciário",
+        description:
+            "Planejamento previdenciário e requerimentos de benefícios junto ao INSS.",
     },
 
     {
         icon: Building2,
         title: "Consultoria Patrimonial",
         description:
-            "Proteção e planejamento patrimonial sofisticado.",
+            "Proteção patrimonial e planejamento sucessório para pessoas e empresas.",
+    },
+
+    {
+        icon: Gavel,
+        title: "Direito Tributário",
+        description:
+            "Planejamento fiscal, recuperação de créditos e defesa em questões tributárias.",
+    },
+
+    {
+        icon: HeartHandshake,
+        title: "Direito do Consumidor",
+        description:
+            "Defesa dos direitos dos consumidores e solução de conflitos de consumo.",
     },
 ];
 
@@ -92,32 +148,34 @@ export default function PracticeAreas() {
                                 <FadeUp key={index}>
 
                                     <div
-                                        className="
-            group
+                                        className={`
+group
+relative
+overflow-hidden
+rounded-[32px]
+border
+backdrop-blur-2xl
+p-8
+transition-all
+duration-700
+hover:-translate-y-1
 
-            relative
-
-            overflow-hidden
-
-            rounded-[32px]
-
-            border
-            border-white/30
-
-            bg-white/60
-
-            backdrop-blur-2xl
-
-            p-8
-
-            shadow-[0_20px_80px_rgba(15,23,42,0.05)]
-
-            transition-all
-            duration-700
-
-            hover:-translate-y-1
-            hover:shadow-[0_30px_90px_rgba(15,23,42,0.08)]
-          "
+${index === 0
+                                                ? `
+      border-red-300/50
+      bg-gradient-to-br
+      from-red-50
+      via-white
+      to-red-100/30
+      shadow-[0_20px_80px_rgba(127,29,29,0.12)]
+    `
+                                                : `
+      border-white/30
+      bg-white/60
+      shadow-[0_20px_80px_rgba(15,23,42,0.05)]
+    `
+                                            }
+`}
                                     >
 
                                         {/* GRADIENT LIGHT */}
@@ -203,6 +261,25 @@ export default function PracticeAreas() {
                                         </div>
 
                                         {/* CONTENT */}
+                                        {index === 0 && (
+                                            <div
+                                                className="
+        absolute
+        top-5
+        right-5
+        px-3
+        py-1
+        rounded-full
+        bg-red-700
+        text-white
+        text-[10px]
+        uppercase
+        tracking-wider
+      "
+                                            >
+                                                Destaque
+                                            </div>
+                                        )}
 
                                         <div className="relative mt-8">
 

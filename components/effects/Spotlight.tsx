@@ -15,19 +15,13 @@ export default function Spotlight() {
             }}
             className="
         absolute
-
         top-0
         left-0
-
         w-[500px]
         h-[500px]
-
-        bg-amber-300/10
-
+        bg-pink-300/10
         blur-[120px]
-
         rounded-full
-
         pointer-events-none
       "
         />

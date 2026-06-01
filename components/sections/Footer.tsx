@@ -127,7 +127,7 @@ export default function Footer() {
                 text-white
               "
                         >
-                            Almeida & Rocha
+                            BRANDÃO GUEDES
                         </h2>
 
                         <p
@@ -257,7 +257,7 @@ export default function Footer() {
                 >
 
                     <p>
-                        © 2026 Almeida & Rocha.
+                        © 2026 Brandão Guedes.
                         Todos os direitos reservados.
                     </p>
 

@@ -122,24 +122,21 @@ export default function Navbar() {
                   text-slate-900
                 "
                             >
-                                Almeida & Rocha
+                                BRANDÃO GUEDES
                             </h1>
 
                             <p
                                 className="
                   mt-1
-
                   text-[10px]
                   sm:text-[11px]
-
                   uppercase
-
                   tracking-[0.28em]
-
                   text-slate-500
+                  flex justify-center
                 "
                             >
-                                Advocacia Estratégica
+                                Advocacia
                             </p>
 
                         </motion.div>

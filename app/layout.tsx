@@ -18,7 +18,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Almeida & Rocha Advocacia",
+  title: "Brandão Guedes",
   description:
     "Escritório premium especializado em soluções jurídicas estratégicas.",
 };
