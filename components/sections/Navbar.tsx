@@ -212,7 +212,7 @@ export default function Navbar() {
                                 className="
                   hidden
                   lg:flex
-                  h-15
+                  h-12
                   px-7                
                   rounded-full
                   text-[14px]
@@ -224,6 +224,7 @@ export default function Navbar() {
                   transition-all
                   duration-500
                   hover:scale-[1.015]
+                  items-center
                 "
                             >
                                 Solicitar Atendimento
@@ -422,17 +423,15 @@ export default function Navbar() {
                                     </a>
                                 ))}
 
-                            </div>
-
                             <a
                                 href={whatsappUrl}
                                 target="_blank"
                                 className="
-                  mt-10
-                  w-full
-                  h-7
+                  p-3
+                  w-80
+                  flex justify-center
                   rounded-full
-                  text-[15px]
+                  text-[18px]
                   text-white
                   bg-slate-950
                   hover:bg-slate-800
@@ -440,6 +439,8 @@ export default function Navbar() {
                             >
                                 Solicitar Atendimento
                             </a>
+                            </div>
+
 
                         </motion.div>
 

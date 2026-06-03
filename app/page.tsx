@@ -19,8 +19,9 @@ import StorySection from "@/components/sections/StorySection";
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
-      <SmoothScroll />
       
+      <SmoothScroll />
+
       <PremiumCursor />
 
       <ScrollProgress />
@@ -31,24 +32,25 @@ export default function Home() {
 
       <Hero />
 
-      <About />
+      <div className="border-x-[30px] border-pink-200">
+        <About />
 
-      <PracticeAreas />
+        <PracticeAreas />
 
-      <Benefits />
+        <Benefits />
 
-      <PremiumSection />
+        <PremiumSection />
 
-      <StorySection />
+        <StorySection />
 
-      <BentoGrid />
+        <BentoGrid />
 
-      <Testimonials />
+        <Testimonials />
 
-      <FAQ />
+        <FAQ />
 
-      <FinalCTA />
-
+        <FinalCTA />
+      </div>
       <Footer />
 
     </main>
