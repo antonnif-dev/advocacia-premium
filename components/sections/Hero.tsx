@@ -16,6 +16,8 @@ import WebGLBackground from "@/components/effects/WebGLBackground";
 import ShaderGradient from "@/components/effects/ShaderGradient";
 
 export default function Hero() {
+    const whatsappUrl = `https://wa.me/553193233469?text=${encodeURIComponent("Olá, tudo bem? Vi seu contato através do site, gostaria de saber mais informações jurídicas.")}`;
+
     return (
         <section
             id="inicio"
@@ -200,34 +202,29 @@ export default function Hero() {
 
                             <MagneticButton>
 
-                                <Button
+                                <a
+                                    href={whatsappUrl}
+                                    target="_blank"
                                     className="
                     h-14
-
                     px-8
-
+                    py-5
                     rounded-full
-
                     text-sm
                     sm:text-[15px]
-
                     font-medium
-
                     bg-gradient-to-r
                     from-amber-600
                     to-yellow-500
-
                     hover:from-amber-500
                     hover:to-yellow-400
-
                     shadow-[0_10px_40px_rgba(198,169,105,0.28)]
-
                     transition-all
                     duration-500
                   "
                                 >
                                     Solicitar Atendimento
-                                </Button>
+                                </a>
 
                             </MagneticButton>
                             {/*

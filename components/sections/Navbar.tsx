@@ -12,6 +12,7 @@ export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
 
     const [mobileOpen, setMobileOpen] = useState(false);
+    const whatsappUrl = `https://wa.me/553193233469?text=${encodeURIComponent("Olá, tudo bem? Vi seu contato através do site, gostaria de saber mais informações jurídicas.")}`;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -205,37 +206,28 @@ export default function Navbar() {
 
                             {/* CTA */}
 
-                            <Button
+                            <a
+                                href={whatsappUrl}
+                                target="_blank"
                                 className="
                   hidden
                   lg:flex
-
-                  h-12
-
-                  px-7
-
+                  h-15
+                  px-7                
                   rounded-full
-
                   text-[14px]
-
                   font-medium
-
                   bg-slate-950
-
                   hover:bg-slate-800
-
                   text-white
-
                   shadow-[0_12px_30px_rgba(15,23,42,0.12)]
-
                   transition-all
                   duration-500
-
                   hover:scale-[1.015]
                 "
                             >
                                 Solicitar Atendimento
-                            </Button>
+                            </a>
 
                             {/* MOBILE BUTTON */}
 
@@ -407,7 +399,6 @@ export default function Navbar() {
                                 className="
     flex
     flex-col
-
     gap-6
   "
                             >
@@ -421,13 +412,9 @@ export default function Navbar() {
                                         }
                                         className="
         text-[22px]
-
         tracking-[-0.03em]
-
         text-slate-800
-
         hover:text-black
-
         transition-colors
       "
                                     >
@@ -437,25 +424,22 @@ export default function Navbar() {
 
                             </div>
 
-                            <Button
+                            <a
+                                href={whatsappUrl}
+                                target="_blank"
                                 className="
                   mt-10
-
                   w-full
-
-                  h-14
-
+                  h-7
                   rounded-full
-
                   text-[15px]
-
+                  text-white
                   bg-slate-950
-
                   hover:bg-slate-800
                 "
                             >
                                 Solicitar Atendimento
-                            </Button>
+                            </a>
 
                         </motion.div>
 
